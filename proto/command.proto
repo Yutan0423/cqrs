@@ -1,0 +1,15 @@
+syntax = "proto3";
+option go_package = "/pb";
+
+import "proto/error.proto";
+import "proto/models.proto";
+import "google/protobuf/timestamp.proto";
+
+package proto;
+
+enum CRUD {
+    UNKNOWN = 0;
+    INSERT = 1;
+    UPDATE = 2;
+    DELETE = 3;
+}
